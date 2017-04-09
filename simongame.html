@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Simon Game</title>
+        <link rel = "stylesheet" href="simongame.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="simongame.js"></script>
+    </head>
+    
+    <body>
+        <div class = 'header-container'>
+            <h1 class = 'header-text'>Athul's Simon Game</h1>
+        </div>
+        
+        <div class = 'main-area'>
+            <div class = 'wrapper'>
+                <div id = 'top-row'>
+                    <div class = 'top-left-wrapper button-wrapper'>
+                        <div id = 'top-left' class = 'main-button'></div>
+                    </div>
+                    <div class = 'top-right-wrapper button-wrapper'>
+                        <div id = 'top-right' class = 'main-button'></div>
+                    </div>
+                    
+                </div>
+                <div id = 'bottom-row'>
+                    <div class = 'bottom-left-wrapper button-wrapper'>
+                        <div id = 'bottom-left' class = 'main-button'></div>
+                    </div>
+                    <div class = 'bottom-right-wrapper button-wrapper'>
+                        <div id = 'bottom-right' class = 'main-button'></div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class = 'center-buttons'>
+                <div class = 'simon-header'>Simon</div>
+                <div class = 'row-1-buttons'>
+                    <div class = 'level-wrapper'>
+                        <div class = 'level-display'></div>
+                        <div class = 'row-1-text'>Level</div>
+                    </div>
+                    <div class = 'start-button-wrapper'>
+                        <div class = 'start-button-display'>
+                            <i class = 'fa fa-play play-icon'></i>
+                        </div>
+                        <div class = 'row-1-text'>Start</div>
+                    </div>
+                    <div class = 'strict-button-wrapper'>
+                        <div class = 'strict-button-display'>!</div>
+                        <div class = 'row-1-text'>Strict</div>
+                    </div>
+                </div>
+                <div class = 'on-off-button'>
+                    Off
+                </div>
+                    
+            </div>
+        </div>
+        
+        <div class = 'modal-container'>
+            <div class = 'modal fade custom-modal' id = 'you-win'>
+                <div class = 'modal-dialog'>
+                    <div class = 'modal-content'>
+                        <div class = 'modal-header'>
+                            <h2 class = 'title-modal'>Congratulations, You Won!</h3>
+                        </div>
+                        <div class = 'modal-body'>
+                            <h3 class = 'instruction-text-modal'>Would you like to play again?</h4>
+                        </div>
+                        <div class = 'modal-footer width-foot'>
+                            <div class = 'buttons-container'>
+                                <button id = 'choose-yes' class = 'yes-or-no yes-button' data-dismiss="modal">Yes</button>
+                                <button id = 'choose-no' class = 'yes-or-no no-button' data-dismiss="modal">No</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

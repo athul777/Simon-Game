@@ -1,0 +1,454 @@
+/*The CSS for this project is extra long because I imported almost 200 lines of code from Bootstrap. I chose not to add bootstrap to the html because I formatted everything before adding bootstrap, so adding bootstrap made all my existing formatting different, so I chose only to take some code from Bootstrap, namely the modal classes to enable a modal if the player wins the game. */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Dosis:700);
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:700);
+
+body {
+/*    background: url("http://wallpapercave.com/wp/BhcQpIw.jpg");*/
+    background-color: #dcdcc6;
+}
+
+.header-container {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #A7A37E;
+    width: 500px;
+    margin: 0px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.header-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.main-area {
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    background-color: ;
+    margin: 0px auto;
+    padding: ;
+}
+
+.wrapper {
+    position: relative;
+    top: 0px;
+}
+
+.center-buttons {
+    height: 370px;
+    width: 370px;
+    border: 15px solid #444;
+    border-radius: 50%;
+    background-color: #CCC;
+    margin: 0px auto;
+    position: relative;
+    top: -550px;
+}
+
+#top-row {
+    display: flex;
+}
+
+#bottom-row {
+    display: flex;
+}
+
+.button-wrapper {
+    height: 350px;
+    width: 350px;
+    margin: 0px;
+    background-color: #444;
+}
+
+.top-left-wrapper {
+    border-radius: 95% 0 0 0;
+}
+
+.top-right-wrapper {
+    border-radius: 0 95% 0 0;
+}
+
+.bottom-left-wrapper {
+    border-radius: 0 0 0 95%;
+}
+
+.bottom-right-wrapper {
+    border-radius: 0 0 95% 0;
+}
+
+.main-button {
+    height: 310px;
+    width: 310px;
+    margin: 20px auto 0px auto;
+/*    border: 20px solid #444;*/
+}
+
+
+#top-left{ 
+    background-color: #00994d;
+    border-radius: 100% 0 0 0;
+}
+
+#top-right{ 
+    background-color: #990000;
+    border-radius: 0 100% 0 0;
+}
+
+#bottom-left {
+    background-color: #FFCD40;
+    border-radius: 0 0 0 100%;
+}
+
+#bottom-right {
+    background-color: #004d99;
+    border-radius: 0 0 100% 0;
+}
+
+#top-left.light-color {
+    background-color: #00e674;
+}
+
+#top-right.light-color {
+    background-color: #e60000;
+}
+
+#bottom-left.light-color {
+    background-color: #fffc0d;
+}
+
+#bottom-right.light-color {
+    background-color: #0074e6;
+}
+
+.simon-header {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 100px;
+    cursor: default;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.row-1-buttons {
+    display: flex;
+    width: 300px;
+    margin: 0px auto;
+    cursor: default;
+    background-color: ;
+}
+
+.level-wrapper {
+    width: 80px;
+    background-color: ;
+    margin: 10px;
+}
+
+.level-display {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.row-1-text {
+    text-align: center;
+    margin-top: 5px;
+    margin-top: 5px;
+    font-family: 'Archivo Narrow', sans-serif;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.start-button-wrapper {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.start-button-display {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #0074e6;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-button-display:hover {
+    background-color: #004d99;
+    color: white;
+}
+
+.play-icon {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.strict-button-wrapper {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.strict-button-display {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #990000;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    opacity: 0.7;
+    cursor: pointer;
+    color: black;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.strict-active {
+    opacity: 1;
+    color: white;
+}
+
+.on-off-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #e60000;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px auto 0px auto;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.on-off-button:hover {
+    
+}
+
+.on-off-active {
+    background-color: #00994d;
+    opacity: 1;
+}
+
+
+.custom-modal {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-modal {
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.instruction-text-modal {
+    text-align: center;
+}
+
+.buttons-container {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.yes-or-no {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 25px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: #747258;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.yes-or-no:hover {
+    border: 3px solid #747258;
+    background-color: white;
+    color: #747258;
+}
+
+.yes-button {
+    float: left;
+}
+
+.no-button {
+    float: right;
+}
+
+#choose-yes {
+    float: left;
+}
+
+#choose-no {
+    float: right;
+}
+
+
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: " ";
+}
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
